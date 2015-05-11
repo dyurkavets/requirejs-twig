@@ -1,0 +1,26 @@
+{
+  "name": "requirejs-twig",
+  "version": "1.0.1",
+  "description": "A plugin for twig in require.js",
+  "homepage": "https://github.com/dyurkavets/requirejs-twig",
+  "keywords": [
+    "twig",
+    "twig.js",
+    "twigjs",
+    "requirejs"
+  ],
+  "authors": [
+    "dyurkavets <dyurkavets@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "twig.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "twig.js": "~0.8.2"
+  }
+}
