@@ -2,13 +2,13 @@
 
 ## Installation
 
-Use `bower` or `npm` to add `requirejs-text` plugin to your project:
+Use `bower` or `npm` to add `requirejs-twig` plugin to your project:
 
-`bower install requirejs-text`
+`bower install requirejs-twig`
 
 or
 
-`npm install requirejs-text`
+`npm install requirejs-twig`
 
 ## Config
 
