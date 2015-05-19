@@ -4,10 +4,11 @@ define(['twig'], function(Twig) {
 
     var twig = Twig.twig,
         DEFAULT_EXTENSION = 'twig',
-        TWIG_COMPILER_MODULE = 'requirejs-text';
+        TWIG_COMPILER_MODULE = 'requirejs-twig';
 
     Twig.extend(function(Twig) {
         var compiler = Twig.compiler;
+
         compiler.module[TWIG_COMPILER_MODULE] = function(id, tokens, pathToTwig) {
             return ('define(["' + pathToTwig + '"],function(Twig) {\n\tvar twig = Twig.twig,\n\t\ttemplate = ' +
                 compiler.wrap(id, tokens) + '\n\treturn function(context) {\n\t\treturn template.render(context)\n\t};\n});\n');

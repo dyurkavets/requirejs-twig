@@ -1,6 +1,6 @@
 {
   "name": "requirejs-twig",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A plugin for twig in require.js",
   "homepage": "https://github.com/dyurkavets/requirejs-twig",
   "keywords": [
@@ -18,9 +18,10 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test"
+    "test",
+    "karma.conf.js"
   ],
   "dependencies": {
-    "twig.js": "~0.8.2"
+    "twig.js": ">= 0.6.0"
   }
 }

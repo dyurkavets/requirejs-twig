@@ -1,6 +1,6 @@
 {
   "name": "requirejs-twig",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A plugin for twig in require.js",
   "homepage": "https://github.com/dyurkavets/requirejs-twig",
   "keywords": [
@@ -20,5 +20,18 @@
     "url": "https://github.com/dyurkavets/requirejs-twig/issues"
   },
   "license": "MIT",
-  "main": "twig.js"
+  "main": "twig.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-karma": "^0.10.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.32",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-requirejs": "^0.2.2",
+    "requirejs": "^2.1.17"
+  }
 }
