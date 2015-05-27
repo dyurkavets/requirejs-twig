@@ -12,18 +12,21 @@ or
 
 ## Config
 
-Make sure you tell `requirejs` about new `twigjs` plugin by editing your requirejs config file. In addition you can
-redefine extension which is appended to template files.
+Make sure you tell `requirejs` about new `twigjs` plugin by editing your requirejs config file. In addition? you can
+redefine several options.
 
 ```js
 require.config({
     paths: {
         twig: 'path/to/libs/twig.js/twig',
-        twigjs: 'path/to/libs/require-twig/twig'
+        twigjs: 'path/to/libs/require-twig/twigjs'
     },
     // optional
-    twigjs: {
-        extension: 'html' // default: twig
+    config: {
+        twigjs: {
+            autoescape: false, // default: true (Since Twig.js 0.8.0)
+            extension: 'html' // default: twig
+        }
     }
 });
 ```

@@ -15,7 +15,7 @@ module.exports = function(config) {
             { pattern: 'test/**/*.spec.js', included: false },
             { pattern: 'test/templates/**/*.twig', included: false },
             { pattern: 'test/templates/**/*.html', included: false },
-            { pattern: 'twig.js', included: false },
+            { pattern: 'twigjs.js', included: false },
             'test/test-main.js'
         ],
 
@@ -29,7 +29,7 @@ module.exports = function(config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress'],
+        reporters: ['progress', 'growl'],
 
         // web server port
         port: 9876,
