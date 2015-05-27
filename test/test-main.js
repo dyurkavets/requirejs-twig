@@ -24,8 +24,7 @@
         baseUrl: '/base',
 
         paths: {
-            twig: 'bower_components/twig.js/twig',
-            twigjs: './twig'
+            twig: 'bower_components/twig.js/twig'
         },
 
         // dynamically load all test files
